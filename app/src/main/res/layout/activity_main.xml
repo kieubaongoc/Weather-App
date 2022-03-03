@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg9"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edittextSearch"
+                android:layout_marginLeft="2dp"
+                android:hint="City, State"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imageButtonSearch"
+                android:src="@drawable/search6"
+                android:background="@color/noBG"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:scaleType="fitXY"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textviewCity"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:text="Tên thành phố"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textviewCountry"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:text="Tên quốc gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/textviewTemp"
+        android:layout_gravity="center"
+        android:text="Nhiệt độ"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textviewStatus"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="Trạng thái"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/humi5"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"/>
+            <TextView
+                android:id="@+id/textviewHumi"
+                android:text="Độ ẩm"
+                android:textColor="#BCFFFFFF"
+                android:textSize="19dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"/>
+            <TextView
+                android:id="@+id/textviewCloud"
+                android:text="Mây"
+                android:textColor="#BCFFFFFF"
+                android:textSize="19dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/mill"
+                android:paddingBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"/>
+            <TextView
+                android:id="@+id/textviewWind"
+                android:text="Gió"
+                android:textColor="#BCFFFFFF"
+                android:textSize="19dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textviewDay"
+        android:text="Ngày cập nhật"
+        android:textSize="22dp"
+        android:textColor="#BCFFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonChangeActivity"
+        android:text="Xem các ngày tiếp theo"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
