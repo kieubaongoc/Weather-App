@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Ngày tháng"
-            android:textColor="#D8FFFFFF"
+            android:textColor="#D2FFFFFF"
             android:textSize="20dp" />
 
         <TextView
