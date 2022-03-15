@@ -51,8 +51,8 @@ public class CustomAdapter extends BaseAdapter {
 
         txtDay.setText(weather.Day);
         txtStatus.setText(weather.Status);
-        txtMaxTemp.setText(weather.MaxTemp+"ﾟC");
-        txtMinTemp.setText(weather.MinTemp+"ﾟC");
+        txtMaxTemp.setText(weather.MaxTemp + "ﾟC");
+        txtMinTemp.setText(weather.MinTemp + "ﾟC");
 
         Picasso.with(context).load("http://openweathermap.org/img/wn/" + weather.Image + ".png").into(imageViewStatus);
 

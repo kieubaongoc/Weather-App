@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Weather App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="footer_copyright">©Copyright 2022 - KieuBaoNgoc</string>
+    <string name="footer_resource">Nguồn tin theo Openweathermap.org</string>
+    <string name="footer_version">Phiên bản 1.0</string>
 </resources>
