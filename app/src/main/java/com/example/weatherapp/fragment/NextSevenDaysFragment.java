@@ -37,6 +37,10 @@ public class NextSevenDaysFragment extends Fragment {
     CustomAdapter customAdapter;
     ArrayList<Weather> weatherArrayList;
 
+    public NextSevenDaysFragment() {
+        // Required empty public constructor
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
